@@ -1,4 +1,4 @@
-In this practice let's build a **Nxt Trendz - Specific Product Details** by applying the concepts we have learned till now.
+In this project I have  build a **Nxt Trendz - Specific Product Details** by applying the concepts I have learned in react.
 
 ### Refer to the image below:
 
@@ -29,27 +29,27 @@ In this practice let's build a **Nxt Trendz - Specific Product Details** by appl
 - Start up the app using `npm start`
 </details>
 
-### Project Completion Instructions
+### Project Completion functionalities
 
 <details>
-<summary>Click to view the Functionality to be added</summary>
+<summary>Click to view the Functionality added</summary>
 
 #### Add Functionality
 
-The app must have the following functionalities
+The app have the following functionalities
 
-- When an _authenticated user_ clicks on a product in the Products Route, then the page should be navigated to **Product Item Details** route.
+- When an _authenticated user_ clicks on a product in the Products Route, then the page will be navigated to **Product Item Details** route.
 - When the **Product Item Details** route is opened,
-  - An HTTP GET request should be made to productDetailsApiUrl with `product id` as path parameter.
-  - **_loader_** should be displayed while the HTTP request is fetching the data
-  - After the HTTP request is successful, the response received should be displayed.
-  - The quantity of the product should initially be 1.
-  - The quantity of the product should be incremented by 1 when the plus icon is clicked.
-  - The quantity of the product should be decremented by 1 when the minus icon is clicked.
-  - The list of similar products should be displayed.
-- When the **Product Item Details** route is opened, if the response received in the HTTP GET request returns the status as `404`, then the [Failure view](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-product-details-error-lg-output.png) should be displayed.
-- When the **Continue Shopping** button in the [Failure view](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-product-details-error-lg-output.png) is clicked, the page should be navigated to Products Route.
-- When an _unauthenticated user_ tries to access the **Product Item Details** route, the page should be navigated to Login Route
+  - An HTTP GET request will made to productDetailsApiUrl with `product id` as path parameter.
+  - **_loader_** will be displayed while the HTTP request is fetching the data
+  - After the HTTP request is successful, the response received will be displayed.
+  - The quantity of the product will initially be 1.
+  - The quantity of the product will be incremented by 1 when the plus icon is clicked.
+  - The quantity of the product will be decremented by 1 when the minus icon is clicked.
+  - The list of similar products will be displayed.
+- When the **Product Item Details** route is opened, if the response received in the HTTP GET request returns the status as `404`, then the [Failure view](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-product-details-error-lg-output.png) will be displayed.
+- When the **Continue Shopping** button in the [Failure view](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-product-details-error-lg-output.png) is clicked, the page will be navigated to Products Route.
+- When an _unauthenticated user_ tries to access the **Product Item Details** route, the page will be navigated to Login Route
 
 </details>
 
@@ -87,50 +87,23 @@ The app must have the following functionalities
 
 </details>
 
-<details>
-<summary>Click to view the Implementation Files</summary>
 
-- Your task is to complete the implementation of
 
-  - `src/components/ProductCard/index.js`
-  - `src/components/ProductCard/index.css`
-  - `src/components/ProductItemDetails/index.js`
-  - `src/components/ProductItemDetails/index.css`
-  - `src/components/SimilarProductItem/index.js`
-  - `src/components/SimilarProductItem/index.css`
 
-  </details>
 
-#### Quick Tips
-
-<details>
-<summary>Click to view Quick Tips</summary>
-
-- The `line-height` CSS property sets the height of a line box. It's commonly used to set the distance between lines of text.
-
-  ```
-  line-height: 1.5;
-  ```
-
-    <br/>
-    <img src="https://assets.ccbp.in/frontend/react-js/line-height-img.png" alt="cursor pointer" style="width:90%; max-width: 600px;"/>
-
-</details>
-<br/>
-
-> #### Important Note
+> #### Note
 >
 > <details open>
-> <summary>Click to view Important Note Points</summary>
+> <summary>Click to view Note Points</summary>
 >
 > **The following HTML attributes are required for the HTML for the tests to pass**
 >
-> - `Home` route should consist of "/" in URL path
-> - `Login` route should consist of "/login" in URL path
-> - `Products` route should consist of "/products" in URL path
-> - `Product Item Details` route should consist of "/products/:id" in URL path
-> - `Cart` route should consist of "/cart" in URL path
-> - No need to use the `BrowserRouter` in `App.js` as we have already included in `index.js`
+> - `Home` route will consist of "/" in URL path
+> - `Login` route will consist of "/login" in URL path
+> - `Products` route will consist of "/products" in URL path
+> - `Product Item Details` route will consist of "/products/:id" in URL path
+> - `Cart` route will consist of "/cart" in URL path
+> - No need to use the `BrowserRouter` in `App.js` as I have already included in `index.js`
 >
 > - Prime User credentials
 >
@@ -146,25 +119,9 @@ The app must have the following functionalities
 >    password: raja@2021
 >   ```
 >
-> - Wrap the Loader component with an HTML container element and add the `testid` attribute value as `loader` to it
+> 
 >
->   ```jsx
->   <div testid="loader">
->     <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
->   </div>
->   ```
->
-> - The product image in Product Item Details Route should have the alt text as **product**
-> - The similar product image in Product Item Details Route should have the alt text as **similar product {product title}**
->
->   ```example
->   similar product Wide Bowknot Hat
->   ```
->
-> - `BsPlusSquare`, `BsDashSquare` icons from react-icons should be used for **plus** and **minus** buttons in ProductItemDetails route
-> - The Product Item Details route should consist of two HTML button elements with `testid` attribute values as **plus** and **minus** respectively.
->
-> </details>
+> 
 
 ### Resources
 
@@ -208,9 +165,4 @@ The app must have the following functionalities
 
 - Roboto
 
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+
